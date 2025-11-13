@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>艺术作品集</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">ARTIST</div>
+            <ul class="nav-links">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#work">WORK</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+            <button class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="fade-in">ARTIST NAME</h1>
+            <p class="fade-in">ART PORTFOLIO | CREATIVE EXPLORATION</p>
+            <a href="#work" class="btn fade-in">VIEW WORK</a>
+        </div>
+    </section>
+
+    <section id="work" class="portfolio">
+        <h2 class="fade-in">作品集</h2>
+        <div class="filter-container fade-in">
+            <button class="filter-btn active" data-filter="all">全部</button>
+            <button class="filter-btn" data-filter="插画">插画</button>
+            <button class="filter-btn" data-filter="油画">油画</button>
+            <button class="filter-btn" data-filter="数字艺术">数字艺术</button>
+            <button class="filter-btn" data-filter="素描">素描</button>
+            <button class="filter-btn" data-filter="混合媒介">混合媒介</button>
+        </div>
+        <div class="portfolio-grid">
+            <!-- 作品集项目将通过JavaScript动态加载 -->
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2 class="fade-in">关于我</h2>
+        <div class="about-content fade-in">
+            <p>我是一名专业的美术工作者，专注于[艺术风格/媒介]创作。我的作品探索[主题/概念]，通过[创作方法/技巧]表达[艺术理念]。</p>
+            <p>我拥有[教育背景/工作经验]，曾在[展览/比赛]中获得[奖项/认可]。我的作品曾在[地点]展出，并被[收藏/使用]于[项目/机构]。</p>
+        </div>
+    </section>
+
+    <!-- 联系我 -->
+    <section id="contact" class="contact">
+        <h2 class="fade-in">CONTACT</h2>
+        <div class="contact-form fade-in">
+            <form id="contactForm">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send</button>
+            </form>
+        </div>
+        <div class="social-links fade-in">
+            <a href="#" target="_blank">Instagram</a>
+            <a href="#" target="_blank">Behance</a>
+            <a href="#" target="_blank">LinkedIn</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 艺术家作品集. 保留所有权利.</p>
+    </footer>
+</body>
+</html>
